@@ -1,0 +1,41 @@
+.build-section {
+    background-color: $clr-dark-green;
+    padding: 140px 0;
+    background-image: url(../../images/svg/buid-bg-1.svg);
+    background-repeat: no-repeat;
+    background-size: 100px 244px, ;
+    background-position: right bottom;
+}
+
+.build__text-line {
+    display: inline-block;
+    width: 50px;
+    height: 4px;
+    background-color: $clr-pink;
+}
+.build__content-wrapper {
+    padding-top: 54px;
+    @include Display($items:start, $justify:start, $gap:125px);
+}
+.build__title {
+    @include TextStyle($FW:700, $FS:48px, $LH:48px, $LS:0px, $CLR:$clr-white);
+}
+.build__list {
+    @include Display($items:start, $justify:start, $gap:32px);
+    flex-direction: column;
+}
+.build__item {
+    @include Display($items:center, $justify:start, $gap:23px);
+}
+
+.build__wrapper {
+    width: 445px;
+    @include Display($items:start, $justify:start, $gap:16px);
+    flex-direction: column;
+}
+.build__wrapper-title {
+    @include TextStyle($FW:700, $FS:18px, $LH:28px, $LS:0px, $CLR:$clr-pink);
+}
+.build__wrapper-text {
+    @include TextStyle($FW:700, $FS:15px, $LH:25px, $LS:0px, $CLR:$clr-white);
+}
