@@ -1,6 +1,13 @@
 @font-face {
   font-display: swap;
   font-family: "Livvic";
+  font-style: italic;
+  font-weight: 500;
+  src: url("../fonts/livvic-v15-latin-500italic.woff2") format("woff2");
+}
+@font-face {
+  font-display: swap;
+  font-family: "Livvic";
   font-style: normal;
   font-weight: 600;
   src: url("../fonts/livvic-v15-latin-600.woff2") format("woff2");
@@ -156,7 +163,7 @@ button {
   color: #F67E7E !important;
 }
 
-.hero_text-wrapper {
+.hero__text-wrapper {
   width: 445px;
 }
 
@@ -294,4 +301,87 @@ button {
   line-height: 25px;
   letter-spacing: 0px;
   color: #FFFFFF;
+}
+
+.results-section {
+  background-color: #004047;
+  padding: 140px 0;
+  background-image: url("../../images/svg/result-bg-1.svg"), url("../../images/svg/result-bg-2.svg");
+  background-repeat: no-repeat, no-repeat;
+  background-size: 147px 100px, 200px 100px;
+  background-position: left top, right bottom;
+}
+
+.results__wrapper {
+  width: 932px;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 56px;
+  flex-direction: column;
+  margin: 0 auto;
+}
+
+.results__title {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 48px;
+  letter-spacing: 0px;
+  color: #FFFFFF;
+  text-align: center;
+}
+
+.results__title--change-color {
+  color: #79C8C7;
+}
+
+.results__list {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 30px;
+}
+
+.results__item {
+  width: 350px;
+  text-align: center;
+  background-image: url("../../images/svg/result-bg-3.svg");
+  background-repeat: no-repeat;
+  background-size: 67px 56px;
+  background-position: top center;
+  padding-top: 36px;
+}
+
+.results__item__quote {
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 25px;
+  letter-spacing: 0px;
+  color: #FFFFFF;
+  margin-bottom: 24px;
+}
+
+.results__person {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 2px;
+  flex-direction: column;
+}
+
+.results__person__name {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 28px;
+  letter-spacing: 0px;
+  color: #79C8C7;
+}
+
+.results__person__role {
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 18px;
+  letter-spacing: 0px;
+  color: #FFFFFF;
+  margin-bottom: 32px;
 }/*# sourceMappingURL=main.css.map */
