@@ -1,0 +1,56 @@
+.site-header {
+    padding: 73px 0 129px;
+}
+.header {
+    @include Display($items:center, $justify:space-between, $gap:0px);
+}
+.header__left-content {
+    @include Display($items:center, $justify:start, $gap:80px);
+}
+.header__logo-link {
+    display: inline-block;
+}
+.header__navbar {
+    @include Display($items:center, $justify:start, $gap:40px);
+}
+.header_link {
+    @include TextStyle($FW:600, $FS:18px, $LH:28px, $LS:0px, $CLR:$clr-white);
+}
+.header__btn {
+    @include BtnStyle($BC:$clr-white, $P: 10px 32px);
+    &:hover {
+        color: $clr-dark-green;
+        background-color: $clr-white;
+        border: $clr-dark-green;
+    }
+}
+.header__menu-icon {
+    display: none;
+    background-color: transparent;
+    border: none;
+}
+
+@media (max-width:775px){
+    .site-header {
+        padding: 64px 0 112px;
+    }
+    .header__logo-link > img {
+        width: 127px;
+        height: 32px;
+    }
+    .header__left-content {
+        @include Display($items:center, $justify:start, $gap:40px);
+    }
+}
+
+@media (max-width:602px) {
+    .site-header {
+        padding: 48px 0 80px;
+    }
+    .header__navbar, .header__btn {
+        display: none;
+    }
+    .header__menu-icon {
+        display: block;
+    }     
+}
