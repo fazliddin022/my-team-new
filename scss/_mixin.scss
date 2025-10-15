@@ -21,3 +21,19 @@
     background-color: transparent;
     transition: all 0.3s;
 }
+
+
+@mixin Line($BG, $MB){
+    display: inline-block;
+    width: 50px;
+    height: 4px;
+    background-color: $BG;
+    margin-bottom: $MB;
+}
+
+@mixin Bg($Url, $Size, $Position){
+    background-image: url($Url);
+    background-repeat: no-repeat;
+    background-size: $Size;
+    background-position: $Position;
+}
