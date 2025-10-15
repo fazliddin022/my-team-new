@@ -94,7 +94,7 @@ button {
 .header__btn:hover {
   color: #012F34;
   background-color: #FFFFFF;
-  border: #012F34;
+  border-color: #012F34;
 }
 
 .header__menu-icon {
@@ -384,4 +384,45 @@ button {
   letter-spacing: 0px;
   color: #FFFFFF;
   margin-bottom: 32px;
+}
+
+.contact-section {
+  padding: 76px 0;
+  background-color: #F67E7E;
+  background-image: url("../../images/svg/contact-bg.svg");
+  background-repeat: no-repeat;
+  background-size: 200px 142px;
+  background-position: bottom left;
+}
+
+.contact {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 260px;
+}
+
+.contact__title {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 48px;
+  letter-spacing: 0px;
+  color: #012F34;
+}
+
+.contact__btn {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 28px;
+  letter-spacing: 0px;
+  color: #012F34;
+  padding: 10px 32px;
+  border: 2px solid #012F34;
+  border-radius: 24px;
+  background-color: transparent;
+  transition: all 0.3s;
+}
+.contact__btn:hover {
+  color: #FFFFFF;
+  background-color: #012F34;
 }/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,23 @@
+.contact-section {
+    padding: 76px 0;
+    background-color: $clr-pink;
+    background-image: url("../../images/svg/contact-bg.svg");
+    background-repeat: no-repeat;
+    background-size: 200px 142px;
+    background-position: bottom left;
+}
+
+.contact {
+    @include Display($items:center, $justify:space-around, $gap:260px);
+}
+
+.contact__title {
+    @include TextStyle($FW:700, $FS:48px, $LH:48px, $LS:0px, $CLR:$clr-dark-green);
+}
+.contact__btn {
+    @include BtnStyle($BC: $clr-dark-green, $P:10px 32px);
+    &:hover {
+        color: $clr-white;
+        background-color: $clr-dark-green;
+    }
+}
