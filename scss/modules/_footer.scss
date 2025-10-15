@@ -1,0 +1,48 @@
+.site-footer {
+    padding: 48px 0;
+}
+.footer {
+    @include Display($items:center, $justify:space-between, $gap:0px);
+}
+.footer__left-wrapper {
+    width: 160px;
+}
+.footer__logo-link {
+    display: inline-block;
+    margin-bottom: 25px;
+}
+.footer__navbar {
+    @include Display($items:center, $justify:start, $gap:40px);
+}
+.footer_link {
+    @include TextStyle($FW:600, $FS:18px, $LH:28px, $LS:0px, $CLR:$clr-white);
+}
+.footer__address {
+    width: 222px;
+}
+.footer__info {
+    @include TextStyle($FW:600, $FS:15px, $LH:25px, $LS:0px, $CLR:$clr-white);
+    opacity: .6;
+}
+.footer-right {
+    @include Display($items:end, $justify:start, $gap:51px);
+    flex-direction: column;
+}
+.footer__socials {
+    @include Display($items:center, $justify:start, $gap:16px);
+}
+.social__link {
+    color: $clr-white;
+    transition: all 0.3s;
+    &:hover {
+        color: $clr-pink;
+    }
+    &:active {
+        color: $clr-dark-green;
+    }
+}
+
+.footer__copy {
+   @include TextStyle($FW:600, $FS:15px, $LH:25px, $LS:0px, $CLR:$clr-white);
+   opacity: .6; 
+}

@@ -20,4 +20,9 @@
         color: $clr-white;
         background-color: $clr-dark-green;
     }
+    &:active {
+        color: $clr-dark-green;
+        background-color: $clr-lightblue;
+        border-color: $clr-dark-green;
+    }
 }
