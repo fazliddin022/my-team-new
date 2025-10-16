@@ -1,0 +1,79 @@
+.success-section {
+    padding: 140px 0;
+    background-image: url(../../images/svg/result-bg-1.svg), url(../../images/svg/result-bg-2.svg);
+    background-repeat: no-repeat;
+    background-size: 147px 100px, 200px 100px;
+    background-position: left top, right bottom;
+}
+
+.success__title-wrapper {
+    max-width: 932px;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 56px;
+}
+.success__title {
+    @include TextStyle($FW:700, $FS:48px, $LH:48px, $LS:0px, $CLR:$clr-white);
+}
+.success__title--change-color {
+    color: $clr-lightblue !important;
+}
+.success__list {
+    @include Display($items:start, $justify:start, $gap:30px);
+}
+.success__item {
+    @include Bg($Url:"../images/svg/result-bg-3.svg", $Size: 67px 56px, $Position: center top);
+    @include Display($items:center, $justify:start, $gap:0px);
+    padding-top: 36px;
+    width: 350px;
+    text-align: center;
+    flex-direction: column;
+}
+.success__item > p {
+    @include TextStyle($FW:600, $FS:15px, $LH:25px, $LS:0px, $CLR:$clr-white);
+    margin-bottom: 24px;
+}
+
+.success__item > strong {
+    @include TextStyle($FW:700, $FS:18px, $LH:28px, $LS:0px, $CLR:$clr-lightblue);
+    margin-bottom: 2px;
+}
+
+.success__item > i {
+    @include TextStyle($FW:500, $FS:13px, $LH:88px, $LS:0px, $CLR:$clr-white);
+}
+
+@media (max-width: 753px) {
+    .success-section {
+        padding: 100px 0;
+    }
+    .success__title-wrapper {
+        width: 70%;
+        margin-bottom: 48px;    
+    }
+    .success__title {
+        @include TextStyle($FW:700, $FS:32px, $LH:32px, $LS:0px, $CLR:$clr-white);
+    }
+    .success__list {
+        @include Display($items:center, $justify:start, $gap:48px);
+        flex-direction: column;
+    }
+    .success__item {
+        width: 80%;
+    }
+    .success__item > p {
+        margin-bottom: 24px;
+    }
+}
+
+@media (max-width: 500px) {
+    .success-section {
+        padding: 140px 0;
+    }
+    .success__title-wrapper {
+        width: 100%;
+    }
+    .success__item {
+        width: 100%;
+    }
+}
